@@ -1,6 +1,8 @@
-const genDiff = (filepath1, filepath2) => {
+const genDiff = (filepath1, filepath2, format) => {
   // Здесь будет логика сравнения файлов
-  return `Разница между ${filepath1} и ${filepath2}`;
+
+
+  return `Comparing ${filepath1} and ${filepath2} with format: ${format}`;
 };
 
 export default genDiff;
