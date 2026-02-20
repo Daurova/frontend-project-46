@@ -1,2 +1,5 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Daurova/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Daurova/frontend-project-46/actions)
+
+## Пример работы
+https://asciinema.org/a/vaP7G3JjqD02dhY5
