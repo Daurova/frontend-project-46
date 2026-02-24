@@ -14,3 +14,12 @@ help-all:
 	@echo "  make install  - Установить зависимости (npm ci)"
 	@echo "  make help     - Показать справку gendiff"
 	@echo "  make version  - Показать версию gendiff"
+
+lint:
+	npm run lint
+	
+lint-fix:
+	npm run lint -- --fix
+
+test:
+	npm test
