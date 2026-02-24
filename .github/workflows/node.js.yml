@@ -29,9 +29,9 @@ jobs:
 
       - run: npm ci
       - run: make lint
-      # - run: npm test
-      # - name: Run tests with coverage
-      #   run: npm test -- --coverage
+      - run: npm test
+      - name: Run tests with coverage
+        run: npm test -- --coverage
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@v5
