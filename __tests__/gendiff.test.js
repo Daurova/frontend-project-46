@@ -21,3 +21,11 @@ test('gendiff compares flat JSON files', () => {
   const result = genDiff(filepath1, filepath2)
   expect(normalizeLineEndings(result)).toBe(normalizeLineEndings(expected))
 })
+
+test('gendiff compares flat YAML files', () => {
+  const filepath1 = getFixturePath('file1.yml')
+  const filepath2 = getFixturePath('file2.yml')
+  const expected = readFixture('expected.txt')
+  const result = genDiff(filepath1, filepath2)
+  expect(normalizeLineEndings(result)).toBe(normalizeLineEndings(expected))
+})
