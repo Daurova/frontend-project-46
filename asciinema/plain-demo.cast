@@ -1,0 +1,12 @@
+{"version": 2, "width": 118, "height": 13, "timestamp": 1773665299, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.546199, "o", "\u001b[?2004h\u001b[0;32m@Daurova \u001b[0m➜ \u001b[1;34m/workspaces/frontend-project-46 \u001b[0;36m(\u001b[1;31mmain\u001b[0;36m) \u001b[0m$ "]
+[4.33494, "o", "exit"]
+[4.806268, "o", "\b\b\b\bgendiff -f plain __fixtures__/file1.json __fixtures__/file2.json"]
+[6.361251, "o", "\r\n\u001b[?2004l\r"]
+[6.464316, "o", "Property 'follow' was removed\r\nProperty 'proxy' was removed\r\nProperty 'timeout' was updated. From 50 to 20\r\nProperty 'verbose' was added with value: true\r\n"]
+[6.487375, "o", "\u001b[?2004h\u001b[0;32m@Daurova \u001b[0m➜ \u001b[1;34m/workspaces/frontend-project-46 \u001b[0;36m(\u001b[1;31mmain\u001b[0;36m) \u001b[0m$ "]
+[13.723762, "o", "e"]
+[13.945758, "o", "x"]
+[14.611646, "o", "i"]
+[14.898345, "o", "t"]
+[15.392319, "o", "\r\n\u001b[?2004l\rexit\r\n"]
