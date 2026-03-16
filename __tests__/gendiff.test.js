@@ -45,3 +45,21 @@ test('gendiff compares nested YAML files', () => {
   const result = genDiff(filepath1, filepath2)
   expect(normalizeLineEndings(result)).toBe(normalizeLineEndings(expected))
 })
+
+// ... существующие импорты и тесты ...
+
+test('gendiff with plain format compares nested JSON files', () => {
+  const filepath1 = getFixturePath('file_nested1.json')
+  const filepath2 = getFixturePath('file_nested2.json')
+  const expected = readFixture('expected_plain.txt')
+  const result = genDiff(filepath1, filepath2, 'plain')
+  expect(normalizeLineEndings(result)).toBe(normalizeLineEndings(expected))
+})
+
+test('gendiff with plain format compares nested YAML files', () => {
+  const filepath1 = getFixturePath('file_nested1.yml')
+  const filepath2 = getFixturePath('file_nested2.yml')
+  const expected = readFixture('expected_plain.txt')
+  const result = genDiff(filepath1, filepath2, 'plain')
+  expect(normalizeLineEndings(result)).toBe(normalizeLineEndings(expected))
+})

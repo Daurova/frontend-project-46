@@ -2,7 +2,7 @@
 
 import parseFile from './parsers.js'
 import buildDiff from './diffBuilder/diffBuilder.js'
-import stylish from './formatters/stylish.js'
+import getFormat from './formatters/index.js'
 
 // const stringifyValue = (value) => {
 //   if (typeof value === 'string') {
@@ -46,10 +46,12 @@ const genDiff = (filepath1, filepath2, format = 'stylish') => {
   const data1 = parseFile(filepath1)
   const data2 = parseFile(filepath2)
   const diff = buildDiff(data1, data2)
+  const exractedFormatFunction = getFormat(format)
 
-  if (format === 'stylish') {
-    return stylish(diff)
+  if (format === 'stylish' || format === 'plain') {
+    return exractedFormatFunction(diff)
   }
+
   console.log('Данные из файлов:')
   console.log('file1:', data1)
   console.log('file2:', data2)
