@@ -48,7 +48,7 @@ const genDiff = (filepath1, filepath2, format = 'stylish') => {
   const diff = buildDiff(data1, data2)
   const exractedFormatFunction = getFormat(format)
 
-  if (format === 'stylish' || format === 'plain') {
+  if (format === 'stylish' || format === 'plain' || format === 'json') {
     return exractedFormatFunction(diff)
   }
 
