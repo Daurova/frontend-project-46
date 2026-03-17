@@ -8,5 +8,7 @@ https://asciinema.org/a/BtbiW8KaSTuYevuP
 
 https://asciinema.org/a/nXjHumUhw8R6iIKd
 
+https://asciinema.org/a/H8zsbZXZVsyBjke5
+
 ## SonarCloud 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Daurova_frontend-project-46&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Daurova_frontend-project-46)
